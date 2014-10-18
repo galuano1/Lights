@@ -1,0 +1,19 @@
+body {
+	padding-top: 50px;
+	}
+.starter-template {
+  	padding: 40px 15px;
+  	text-align: center;
+}
+#off {
+    width: 197px;
+    height: 318px;
+    background: url(../images/lightbulb.jpg) 0 0;
+}
+
+#on {
+    width: 197px;
+    height: 318px;
+    background: url(../images/lightbulb.jpg) -228px 0;
+}
+	
