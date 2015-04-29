@@ -7,15 +7,15 @@ def home():
     return static_file('index.html', root='/home/pi/apps/Lights')
 
 @route('/js/<filename>')
-def home(filename):
+def js(filename):
     return static_file(filename, root='/home/pi/apps/Lights/js')
     
 @route('/css/<filename>')
-def home(filename):
+def css(filename):
     return static_file(filename, root='/home/pi/apps/Lights/css')
     
 @route('/images/<filename>')
-def home(filename):
+def img(filename):
     return static_file(filename, root='/home/pi/apps/Lights/images')
     
 @route('/do')
@@ -41,5 +41,6 @@ def reset():
 	return {'status': light}
 	
 reset()
+lightSwitch()
 
 run(host='0.0.0.0', port=80, debug=True)
